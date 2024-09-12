@@ -291,7 +291,7 @@ export class HuiEntityBadge extends LitElement implements LovelaceBadge {
         gap: 8px;
         height: var(--ha-badge-size, 36px);
         min-width: var(--ha-badge-size, 36px);
-        padding: 0px 8px;
+        padding: 0px 12px;
         box-sizing: border-box;
         width: auto;
         border-radius: var(
@@ -312,8 +312,6 @@ export class HuiEntityBadge extends LitElement implements LovelaceBadge {
           var(--divider-color, #e0e0e0)
         );
         --mdc-icon-size: 18px;
-        text-align: center;
-        font-family: Roboto;
       }
       .badge:focus-visible {
         --shadow-default: var(--ha-card-box-shadow, 0 0 0 0 transparent);
@@ -333,8 +331,6 @@ export class HuiEntityBadge extends LitElement implements LovelaceBadge {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding-right: 4px;
-        padding-inline-end: 4px;
         padding-inline-start: initial;
       }
       .label {
@@ -361,6 +357,8 @@ export class HuiEntityBadge extends LitElement implements LovelaceBadge {
       ha-state-icon {
         color: var(--badge-color);
         line-height: 0;
+        margin-left: -2px;
+        margin-inline-start: -2px;
       }
       img {
         width: 30px;
@@ -373,8 +371,8 @@ export class HuiEntityBadge extends LitElement implements LovelaceBadge {
         padding: 0;
       }
       .badge:not(.no-icon):not(.no-info) img {
-        margin-left: -6px;
-        margin-inline-start: -6px;
+        margin-left: -8px;
+        margin-inline-start: -8px;
         margin-inline-end: initial;
       }
       .badge.no-icon .info {
